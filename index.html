@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6</title>
+  </head>
+  <body>
+    <h1>js task6</h1>
+
+    <script>
+      /*1.write a program to find out who are eligilbe to vote 
+
+
+            if age 0 -18 then amchure voters
+            if age 19-35 then youth voters
+            if 35 above then adult votes*/
+      var a = +prompt("enter the voter age:");
+      if (a >= 0 && a <= 18) {
+        console.log("amchure voter");
+      } else if (a >= 19 && a <= 35) {
+        console.log("youth voter");
+      } else if (a > 35) {
+        console.log("adult voter");
+      } else {
+        console.log("invalid voter");
+      }
+
+      /* 2.write a program to find out pass or fail:
+             if marks=35 above then "pass"*/
+
+      var b = +prompt("enter the number:");
+      if (b >= 35) {
+        console.log("pass");
+      } else {
+        console.log("fail");
+      }
+    </script>
+  </body>
+</html>
